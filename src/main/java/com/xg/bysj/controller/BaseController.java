@@ -1,0 +1,117 @@
+package com.xg.bysj.controller;
+
+import com.xg.bysj.service.*;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+public abstract class BaseController {
+
+
+@Autowired
+protected ActorService actorService;
+@Autowired
+protected ApplicationService applicationService;
+@Autowired
+protected ApprovalService approvalService;
+@Autowired
+protected ApprovalStateService approvalStateService;
+@Autowired
+protected BasicEntityService basicEntityService;
+@Autowired
+protected BasicService basicService;
+@Autowired
+protected DegreeService degreeService;
+@Autowired
+protected DepartmentService departmentService;
+@Autowired
+protected DesignGraduateProjectFromStudentService designGraduateProjectFromStudentService;
+@Autowired
+protected DesignGraduateProjectFromTeacherService designGraduateProjectFromTeacherService;
+@Autowired
+protected DesignGraduateProjectService designGraduateProjectService;
+@Autowired
+protected EmployeeService employeeService;
+@Autowired
+protected EvaluationReportService evaluationReportService;
+@Autowired
+protected ExcellentGraduateProjectOfProvinceService excellentGraduateProjectOfProvinceService;
+@Autowired
+protected ExcellentGraduateProjectOfUniService excellentGraduateProjectOfUniService;
+@Autowired
+protected ExcellentGraduateProjectService excellentGraduateProjectService;
+@Autowired
+protected GraduateProjectFromService graduateProjectFromService;
+@Autowired
+protected GraduateProjectNatureService graduateProjectNatureService;
+@Autowired
+protected GraduateProjectService graduateProjectService;
+@Autowired
+protected GraduateProjectTypeService graduateProjectTypeService;
+@Autowired
+protected MajorService majorService;
+@Autowired
+protected MissionDocService missionDocService;
+@Autowired
+protected ProfTitleService profTitleService;
+@Autowired
+protected ProgressReportService progressReportService;
+@Autowired
+protected QuestionerTeamReportService questionerTeamReportService;
+@Autowired
+protected QuestionerTeamService questionerTeamService;
+@Autowired
+protected RemarkTemplateForDesignGroupService remarkTemplateForDesignGroupService;
+@Autowired
+protected RemarkTemplateForDesignReviewerService remarkTemplateForDesignReviewerService;
+@Autowired
+protected RemarkTemplateForDesignSupervisorService remarkTemplateForDesignSupervisorService;
+@Autowired
+protected RemarkTemplateForThesisGroupService remarkTemplateForThesisGroupService;
+@Autowired
+protected RemarkTemplateForThesisReviewService remarkTemplateForThesisReviewService;
+@Autowired
+protected RemarkTemplateForThesisSupervisorService remarkTemplateForThesisSupervisorService;
+@Autowired
+protected RemarkTemplateItemOptionService remarkTemplateItemOptionService;
+@Autowired
+protected RemarkTemplateItemService remarkTemplateItemService;
+@Autowired
+protected RemarkTemplateService remarkTemplateService;
+@Autowired
+protected ResourceService resourceService;
+@Autowired
+protected ReviewReportService reviewReportService;
+@Autowired
+protected RoleAssResourceService roleAssResourceService;
+@Autowired
+protected RoleService roleService;
+@Autowired
+protected ScheduleService scheduleService;
+@Autowired
+protected SchoolService schoolService;
+@Autowired
+protected StudentClassService studentClassService;
+@Autowired
+protected StudentService studentService;
+@Autowired
+protected SupervisionService supervisionService;
+@Autowired
+protected SupervisorService supervisorService;
+@Autowired
+protected ThesisGraduateProjectFromStudentService thesisGraduateProjectFromStudentService;
+@Autowired
+protected ThesisGraduateProjectFromTeacherService thesisGraduateProjectFromTeacherService;
+@Autowired
+protected ThesisGraduateProjectService thesisGraduateProjectService;
+@Autowired
+protected ThesisProposalService thesisProposalService;
+@Autowired
+protected UserAssRoleService userAssRoleService;
+@Autowired
+protected UserService userService;
+@Autowired
+protected VistingEmployeeService vistingEmployeeService;
+
+
+
+}
