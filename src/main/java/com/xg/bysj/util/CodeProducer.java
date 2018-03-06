@@ -311,8 +311,8 @@ public class CodeProducer {
 
 
 
-//            pointer += (line.getBytes().length + 2);  //  有中文时选这个   获取该行所占字节位数。注意字节!!
-            pointer += (line.getBytes().length + 2);  // “\n”占两个字节位置    获取该行所占字节位数。注意字节!!
+//            pointer += (line.getBytes().length + 2);  //   获取该行所占字节位数。注意字节!!
+            pointer += (line.getBytes().length + 2);  //   获取该行所占字节位数。注意字节!!
 
             if (line.contains("public class " + entityName) || line.contains("public abstract class " + entityName)) {
                 System.out.println(line);
@@ -321,9 +321,9 @@ public class CodeProducer {
                 if (line.contains("{")) {
                     System.out.println(line);
                     System.out.println("插入位置" + pointer);
-                    pointer = pointer - 3;// 插到 { 之前  减去"\n"占得   有中文时-3   没中文时-2
+                    pointer = pointer - 3;// 插到 { 之前  减去"\n"占得
                 } else {
-                    pointer = pointer - 2;// 插到 该行最后  有中文时-2    没中文时-1
+                    pointer = pointer - 2;// 插到 该行最后
                 }
                 break;//跳出while循环
             }
