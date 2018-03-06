@@ -307,11 +307,8 @@ public class CodeProducer {
              * 中英文字符所占字节不一样，直接获取字节数
              */
 
-            if(line.length()==0){
-                pointer += 2;    //"\n"占两个字节位置
-            }else{
-                pointer += (line.getBytes().length + 2);  // “\n”占两个字节位置    获取该行所占字节位数。注意字节!!
-            }
+            pointer += (line.getBytes().length + 2);  // “\n”占两个字节位置    获取该行所占字节位数。注意字节!!
+
             if (line.contains("public class " + entityName) || line.contains("public abstract class " + entityName)) {
                 System.out.println(line);
                 System.out.println(line.getBytes().length);
